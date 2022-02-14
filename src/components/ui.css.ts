@@ -1,0 +1,482 @@
+import { style, styleVariants } from "@vanilla-extract/css"
+import { calc } from "@vanilla-extract/css-utils"
+import { theme } from "../theme.css.ts"
+
+const breakpoints = ["40em", "52em", "64em"]
+
+export const media = {
+  small: `screen and (min-width: ${breakpoints[0]})`,
+  medium: `screen and (min-width: ${breakpoints[1]})`,
+  large: `screen and (min-width: ${breakpoints[2]})`,
+}
+
+export const container = style({
+  maxWidth: theme.sizes.container,
+  marginLeft: "auto",
+  marginRight: "auto",
+  paddingLeft: theme.space[4],
+  paddingRight: theme.space[4],
+})
+
+export const containers = styleVariants({
+  normal: [container],
+  wide: [container],
+  narrow: [
+    container,
+    {
+      maxWidth: theme.sizes.narrow,
+    },
+  ],
+  tight: [
+    container,
+    {
+      maxWidth: theme.sizes.tight,
+    },
+  ],
+  fullbleed: [
+    container,
+    {
+      paddingLeft: 0,
+      paddingRight: 0,
+      "@media": {
+        [media.medium]: {
+          paddingLeft: theme.space[4],
+          paddingRight: theme.space[4],
+        },
+      },
+    },
+  ],
+})
+
+export const flex = style({
+  display: "flex",
+  alignItems: "center",
+})
+
+export const flexVariants = styleVariants({
+  wrap: {
+    flexWrap: "wrap",
+  },
+  start: {
+    alignItems: "flex-start",
+  },
+  end: {
+    alignItems: "flex-end",
+  },
+  stretch: {
+    alignItems: "stretch",
+  },
+  spaceBetween: {
+    width: "100%",
+    flexWrap: "wrap",
+    justifyContent: "space-between",
+  },
+  center: {
+    width: "100%",
+    flexWrap: "wrap",
+    justifyContent: "center",
+  },
+  responsive: {
+    flexDirection: "column",
+    "@media": {
+      [media.small]: {
+        flexDirection: "row",
+      },
+    },
+  },
+})
+
+export const flexGap = styleVariants(theme.space, (gap) => ({ gap }))
+
+export const widths = styleVariants(
+  {
+    full: "100%",
+    half: "50%",
+    quarter: "25%",
+    third: "33.3333%",
+    twothirds: "33.3333%",
+    fitContent: "fit-content",
+  },
+  (width) => [
+    {
+      width: "100%",
+      "@media": {
+        [media.small]: {
+          width,
+        },
+      },
+    },
+  ]
+)
+
+export const list = style({
+  listStyle: "none",
+  padding: 0,
+  margin: 0,
+})
+
+export const padding = styleVariants(theme.space, (padding) => ({ padding }))
+export const paddingY = styleVariants(theme.space, (padding) => ({
+  paddingTop: padding,
+  paddingBottom: padding,
+}))
+export const marginY = styleVariants(theme.space, (margin) => ({
+  marginTop: margin,
+  marginBottom: margin,
+}))
+export const gutter = styleVariants(theme.space, (val) => ({
+  marginLeft: calc.multiply(val, -1),
+  marginRight: calc.multiply(val, -1),
+}))
+export const radii = styleVariants(theme.radii, (borderRadius) => ({
+  overflow: "hidden",
+  borderRadius,
+}))
+export const order = styleVariants([0, 1, 2, 3], (order) => ({
+  "@media": {
+    [media.small]: {
+      order,
+    },
+  },
+}))
+export const box = styleVariants({
+  center: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    textAlign: "center",
+  },
+})
+
+export const margin = styleVariants(
+  {
+    ...theme.space,
+    auto: "auto",
+  },
+  (margin) => ({ margin })
+)
+margin.left = styleVariants(
+  {
+    ...theme.space,
+    auto: "auto",
+  },
+  (marginLeft) => ({ marginLeft })
+)
+margin.right = styleVariants(
+  {
+    ...theme.space,
+    auto: "auto",
+  },
+  (marginRight) => ({ marginRight })
+)
+margin.top = styleVariants(
+  {
+    ...theme.space,
+    auto: "auto",
+  },
+  (marginTop) => ({ marginTop })
+)
+margin.bottom = styleVariants(
+  {
+    ...theme.space,
+    auto: "auto",
+  },
+  (marginBottom) => ({ marginBottom })
+)
+
+export const margin0 = style({ margin: 0 })
+
+export const text = styleVariants({
+  body: [
+    margin0,
+    {
+      marginBottom: theme.space[3],
+      fontSize: theme.fontSizes[2],
+      fontWeight: theme.fontWeights.normal,
+      lineHeight: theme.lineHeights.text,
+      letterSpacing: theme.letterSpacings.normal,
+    },
+  ],
+  lead: [
+    margin0,
+    {
+      marginBottom: theme.space[3],
+      fontSize: theme.fontSizes[3],
+      fontWeight: theme.fontWeights.normal,
+      lineHeight: theme.lineHeights.text,
+      letterSpacing: theme.letterSpacings.normal,
+    },
+  ],
+  superHeading: [
+    margin0,
+    {
+      marginTop: theme.space[5],
+      marginBottom: theme.space[6],
+      fontSize: theme.fontSizes[7],
+      fontWeight: theme.fontWeights.extrabold,
+      lineHeight: theme.lineHeights.heading,
+      letterSpacing: theme.letterSpacings.tight,
+    },
+  ],
+  heading: [
+    margin0,
+    {
+      marginBottom: theme.space[3],
+      fontSize: theme.fontSizes[5],
+      fontWeight: theme.fontWeights.extrabold,
+      lineHeight: theme.lineHeights.tight,
+      letterSpacing: theme.letterSpacings.tight,
+      "@media": {
+        [media.medium]: {
+          fontSize: theme.fontSizes[6],
+        },
+      },
+    },
+  ],
+  subhead: [
+    margin0,
+    {
+      marginBottom: theme.space[3],
+      fontSize: theme.fontSizes[4],
+      fontWeight: theme.fontWeights.extrabold,
+      lineHeight: theme.lineHeights.tight,
+      letterSpacing: theme.letterSpacings.tight,
+    },
+  ],
+  kicker: [
+    margin0,
+    {
+      marginBottom: theme.space[2],
+      fontSize: theme.fontSizes[2],
+      fontWeight: theme.fontWeights.semibold,
+      lineHeight: theme.lineHeights.tight,
+      letterSpacing: theme.letterSpacings.wide,
+      textTransform: "uppercase",
+    },
+  ],
+  caps: [
+    margin0,
+    {
+      marginBottom: theme.space[2],
+      fontSize: theme.fontSizes[1],
+      fontWeight: theme.fontWeights.semibold,
+      letterSpacing: theme.letterSpacings.wide,
+      textTransform: "uppercase",
+      fontStyle: "normal",
+    },
+  ],
+  serif: [
+    margin0,
+    {
+      marginBottom: theme.space[2],
+      fontFamily: theme.fonts.serif,
+      fontSize: theme.fontSizes[6],
+      lineHeight: theme.lineHeights.tight,
+    },
+  ],
+  small: [
+    margin0,
+    {
+      fontSize: theme.fontSizes[1],
+      marginBottom: theme.space[2],
+    },
+  ],
+  medium: [
+    margin0,
+    {
+      fontSize: theme.fontSizes[3],
+    },
+  ],
+  mega: [
+    margin0,
+    {
+      fontSize: "180px",
+      fontFamily: theme.fonts.mono,
+      lineHeight: theme.lineHeights.tight,
+      letterSpacing: theme.letterSpacings.tight,
+      "@media": {
+        [media.medium]: {
+          fontSize: "360px",
+        },
+      },
+    },
+  ],
+  center: {
+    textAlign: "center",
+  },
+  bold: {
+    fontWeight: theme.fontWeights.bold,
+  },
+})
+
+export const link = style({
+  color: "inherit",
+  ":hover": {
+    color: theme.colors.active,
+  },
+})
+
+export const navlink = style({
+  color: "inherit",
+  textDecoration: "none",
+  ":hover": {
+    color: theme.colors.active,
+  },
+})
+
+export const ctaLink = style({
+  color: "inherit",
+  fontWeight: theme.fontWeights.bold,
+  ":hover": {
+    color: theme.colors.active,
+  },
+})
+
+const button = style({
+  display: "inline-flex",
+  textDecoration: "none",
+  fontWeight: theme.fontWeights.bold,
+  fontSize: theme.fontSizes[2],
+  lineHeight: 1,
+  paddingTop: theme.space[3],
+  paddingBottom: theme.space[3],
+  paddingLeft: theme.space[3],
+  paddingRight: theme.space[3],
+  borderRadius: theme.radii.button,
+})
+
+export const buttons = styleVariants({
+  primary: [
+    button,
+    {
+      color: theme.colors.background,
+      backgroundColor: theme.colors.primary,
+      ":hover": {
+        backgroundColor: theme.colors.active,
+      },
+      ":focus": {
+        backgroundColor: theme.colors.active,
+      },
+    },
+  ],
+  reversed: [
+    button,
+    {
+      color: theme.colors.primary,
+      backgroundColor: theme.colors.background,
+      ":hover": {
+        color: theme.colors.background,
+        backgroundColor: theme.colors.active,
+      },
+      ":focus": {
+        color: theme.colors.background,
+        backgroundColor: theme.colors.active,
+      },
+    },
+  ],
+  link: [
+    button,
+    {
+      color: "inherit",
+      backgroundColor: "transparent",
+      ":hover": {
+        backgroundColor: theme.colors.muted,
+      },
+      ":focus": {
+        backgroundColor: theme.colors.muted,
+      },
+    },
+  ],
+  linkReversed: [
+    button,
+    {
+      color: "inherit",
+      backgroundColor: "transparent",
+      ":hover": {
+        color: theme.colors.primary,
+        backgroundColor: theme.colors.muted,
+      },
+      ":focus": {
+        color: theme.colors.primary,
+        backgroundColor: theme.colors.muted,
+      },
+    },
+  ],
+})
+
+export const backgrounds = styleVariants({
+  primary: {
+    color: theme.colors.background,
+    backgroundColor: theme.colors.primary,
+  },
+  muted: {
+    color: theme.colors.primary,
+    backgroundColor: theme.colors.muted,
+  },
+})
+
+export const blockquote = style({
+  margin: 0,
+  paddingLeft: 0,
+  paddingRight: 0,
+  paddingTop: 0,
+  paddingBottom: theme.space[4],
+})
+
+export const avatar = style({
+  minWidth: 0,
+  flexShrink: 0,
+  width: theme.sizes.avatar,
+  height: theme.sizes.avatar,
+  borderRadius: theme.radii.circle,
+})
+
+export const logos = styleVariants({
+  small: {
+    width: "85px",
+    height: "20px",
+  },
+  medium: {
+    maxWidth: "128px",
+  },
+})
+
+export const icons = styleVariants(
+  {
+    small: "24px",
+    medium: "32px",
+    large: "64px",
+  },
+  (size) => ({
+    width: size,
+    height: size,
+    marginBottom: theme.space[2],
+  })
+)
+
+export const iconLink = style({
+  color: theme.colors.text,
+  marginRight: theme.space[3],
+  ":hover": {
+    color: theme.colors.active,
+  },
+  ":focus": {
+    color: theme.colors.active,
+  },
+})
+
+export const interactiveIcon = style({
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  background: "transparent",
+  border: "none",
+  cursor: "pointer",
+  width: 48,
+  height: 48,
+})
+
+// for debugging only
+export const debug = style({
+  outline: "1px solid tomato",
+})
