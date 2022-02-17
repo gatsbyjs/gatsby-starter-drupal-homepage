@@ -294,7 +294,7 @@ exports.createSchemaCustomization = async ({ actions }) => {
       id: ID!
       image: HomepageImage
       name: String
-      title: String
+      jobTitle: String
     }
 
     interface AboutLeadership implements Node & HomepageBlock {
@@ -310,7 +310,7 @@ exports.createSchemaCustomization = async ({ actions }) => {
       id: ID!
       blocktype: String
       heading: String
-      link: HomepageLink
+      links: [HomepageLink]
       logos: [HomepageLogo]
     }
 
@@ -548,8 +548,8 @@ exports.createSchemaCustomization = async ({ actions }) => {
       id: ID!
       image: HomepageImage
         @link(by: "id", from: "relationships.field_image___NODE")
-      name: String @proxy(from: "field_name")
-      title: String
+      name: String @proxy(from: "title")
+      jobTitle: String @proxy(from: "field_job_title")
     }
 
     type node__about_leadership implements Node & AboutLeadership & HomepageBlock
@@ -568,8 +568,8 @@ exports.createSchemaCustomization = async ({ actions }) => {
       id: ID!
       blocktype: String @blocktype
       heading: String @proxy(from: "title")
-      link: HomepageLink
-        @link(by: "id", from: "relationships.field_link___NODE")
+      links: [HomepageLink]
+        @link(by: "id", from: "relationships.field_links___NODE")
       logos: [HomepageLogo]
         @link(by: "id", from: "relationships.field_logos___NODE")
     }
