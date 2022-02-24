@@ -20,17 +20,52 @@ You will need a new or existing `Drupal` website to use this starter and will be
    npx gatsby new my-homepage https://github.com/gatsbyjs/gatsby-starter-drupal-homepage
    ```
 
-1. **Run the Drupal setup command**
+1. **Import content to your Drupal instance**
 
-   **TO BE IMPLEMENTED**
-   From your site's root directory, run:
+   For this implementation we used `Pantheon` as our host. So some configurations may be specific to that platform. Before importing the `sql` dump file we recommend adding the `files` folder located in the `data` directory to your drupal site under `sites/default/` or wherever your `files` folder is located on your instance. Afterwards you may use the `sql` dump file provided in the `data` directory of app called `homepage-starter-dump.sql.gz`. Depending on the setup, you may have to extract the `sql` file before trying to import the data.
+
+   The `composer.json` file as well as exported configurations found in the `config` folder are also included. If you decide to import and install these configurations, please do so before executing the `sql` script and be sure `not` to clean the existing database.
 
    ```sh
-   cd my-homepage
-   yarn setup
+   # import configurations
+   drush cim
+
+   # initial install
+   composer update
+
+   # installing from composer.lock
+   composer install
    ```
 
-   This will run a script to populate your Drupal content model and add demo content.
+   ### Drush
+
+   For more information on how to use drush commands and how to install the command line shell visit [Drush Documentation Site](https://www.drush.org/latest/).
+
+   ```sh
+   # If you wish to start from a clean site
+   drush sql-drop
+   drush sql-cli < ~/path/to/homepage-starter-dump.sql
+   ```
+
+   An `admin` user already exists in the application. You will have to reset the password if you decide to start from a clean site.
+
+   ```sh
+   # Drush 9
+   drush user:password admin "new_password"
+
+   # Drush 8 & earlier
+   drush user-password admin --password="new_password"
+   ```
+
+   ### Lando
+
+   A free, open source, cross-platform, local development environment and DevOps tool built on Docker container technology and developed by Tandem. [See the docs](https://docs.lando.dev/).
+
+   ```sh
+   # This will destroy the database and import the data.
+   # If you wish to keep you existing data add the --no-wipe flag.
+   lando db-import ~/path/to/homepage-starter-dump.sql
+   ```
 
 1. **Start developing**
 
@@ -49,6 +84,8 @@ You will need a new or existing `Drupal` website to use this starter and will be
 Once your content is available in Drupal, deploy your site to [Gatsby Cloud](https://gatsbyjs.com/products/cloud):
 
 [![Deploy to Gatsby](https://www.gatsbyjs.com/deploynow.png "Deploy to Gatsby")](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-drupal-homepage)
+
+## Setting up Gatsby Cloud Preview
 
 ## What's included?
 
@@ -99,6 +136,8 @@ The UI components file `src/components/ui.js` imports styles from `src/component
 
 ### Add your logo
 
+![Logo](./docs/images/logo.png)
+
 Replace the `src/components/brand-logo.js` component with your own brand logo.
 If you have an SVG version, it can be rendered inline as a React component, following the example in this file. Note that SVG attributes will need to be camel cased for JSX.
 
@@ -107,6 +146,8 @@ Using an inline SVG for the logo allows it to pick up the colors used in CSS, wh
 If you prefer to use an image, use the [`StaticImage`](https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-plugin-image/#staticimage) component from `gatsby-plugin-image` in place of the SVG in this file.
 
 ### Customize headings, buttons, and other styles
+
+![Headings & Buttons](./docs/images/headings-buttons.png)
 
 To further customize the look and feel of the homepage, edit the UI components in `src/components/ui.js` and styles in `src/components/ui.css.ts`.
 
