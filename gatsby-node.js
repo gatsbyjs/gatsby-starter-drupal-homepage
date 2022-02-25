@@ -63,6 +63,28 @@ exports.createSchemaCustomization = async ({ actions }) => {
     },
   })
 
+  actions.createFieldExtension({
+    name: "navItemType",
+    args: {
+      name: {
+        type: "String!",
+        defaultValue: "Link",
+      },
+    },
+    extend(options) {
+      return {
+        resolve() {
+          switch (options.name) {
+            case "Group":
+              return "Group"
+            default:
+              return "Link"
+          }
+        },
+      }
+    },
+  })
+
   // abstract interfaces
   actions.createTypes(/* GraphQL */ `
     interface HomepageBlock implements Node {
@@ -76,16 +98,23 @@ exports.createSchemaCustomization = async ({ actions }) => {
       text: String
     }
 
-    interface NavItem implements Node {
+    interface HeaderNavItem implements Node {
       id: ID!
+      navItemType: String
+    }
+
+    interface NavItem implements Node & HeaderNavItem {
+      id: ID!
+      navItemType: String
       href: String
       text: String
       icon: HomepageImage
       description: String
     }
 
-    interface NavItemGroup implements Node {
+    interface NavItemGroup implements Node & HeaderNavItem {
       id: ID!
+      navItemType: String
       name: String
       navItems: [NavItem]
     }
@@ -333,8 +362,9 @@ exports.createSchemaCustomization = async ({ actions }) => {
       text: String @proxy(from: "title")
     }
 
-    type node__nav_item implements Node & NavItem @dontInfer {
+    type node__nav_item implements Node & NavItem & HeaderNavItem @dontInfer {
       id: ID!
+      navItemType: String @navItemType(name: "Link")
       href: String @proxy(from: "field_href")
       text: String @proxy(from: "title")
       icon: HomepageImage
@@ -342,8 +372,10 @@ exports.createSchemaCustomization = async ({ actions }) => {
       description: String @proxy(from: "field_description")
     }
 
-    type node__nav_item_group implements Node & NavItemGroup @dontInfer {
+    type node__nav_item_group implements Node & NavItemGroup & HeaderNavItem
+      @dontInfer {
       id: ID!
+      navItemType: String @navItemType(name: "Dropdown")
       name: String @proxy(from: "title")
       navItems: [NavItem]
         @link(by: "id", from: "relationships.field_nav_items___NODE")
@@ -587,8 +619,6 @@ exports.createSchemaCustomization = async ({ actions }) => {
 
   // Layout types
   actions.createTypes(/* GraphQL */ `
-    union HeaderNavItem = node__nav_item | node__nav_item_group
-
     type node__layout_header implements Node & LayoutHeader @dontInfer {
       id: ID!
       navItems: [HeaderNavItem]

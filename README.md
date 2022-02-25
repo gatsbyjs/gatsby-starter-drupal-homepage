@@ -87,6 +87,14 @@ Once your content is available in Drupal, deploy your site to [Gatsby Cloud](htt
 
 ## Setting up Gatsby Cloud Preview
 
+To enable Gatsby Preview with this site, see the documentation for:
+
+[Configuring for Live Preview](https://www.gatsbyjs.com/docs/how-to/sourcing-data/sourcing-from-drupal/#configuring-gatsby-live-preview)
+
+[Installing Gatsby Module for Drupal](https://www.drupal.org/project/gatsby)
+
+[Drupal FastBuilds](https://support.gatsbyjs.com/hc/en-us/articles/1500008011822-Drupal-Fastbuilds-with-Gatsby-Cloud)
+
 ## What's included?
 
 ```sh
@@ -163,12 +171,25 @@ For this example, we'll create a new "Banner" component.
 
 1. First, update your content model in Drupal
 
-   In your Drupal website, create a new content type and call it "Homepage Banner."
-   For this example, change the `Title` field's name to `Heading` in when creating your new content type. Remove any fields that are added dy default and create a new field called `text` this should be of `Text (plain, long)` data type.
+   1. In your Drupal website, create a new content type and call it "Homepage Banner".
 
-   Find the content type for _Homepage_ in Drupal and edit the settings for the _Content_ field. Under `Reference Type -> Content Type`, ensure that the new _Homepage Banner_ type is checked to make it available as a content type on the Homepage.
+      <img src="./docs/images/step-1.png" alt="Step 1" width="300" />
 
-   Navigate to the _Content_ page to edit the _Homepage_ and add a section with this new _Homepage Banner_ content type.
+   1. For this example, change the _Title_ field's name to _Heading_ in when creating your new content type. Remove any fields that are added dy default and create a new field called `text` this should be of `Text (plain, long)` data type or use an existing field with the same type and field name.
+
+      <img src="./docs/images/step-2.png" alt="Step 2" width="400" />
+
+      <img src="./docs/images/step-3.png" alt="Step 3" width="400" />
+
+   1. Find the content type for `Homepage` click _Manage fields_ and edit the settings for the `content` field. Under _Reference Type -> Content Type_, ensure that the new `Homepage Banner` type is checked to make it available as a content type on the Homepage.
+
+      <img src="./docs/images/step-4.png" alt="Step 4" width="400"/>
+
+      <img src="./docs/images/step-5.png" alt="Step 5" width="400"/>
+
+   1. Create a new `Homepage Banner` entry then navigate back to the `Content` page to edit the `Homepage` entry and insert a section with this new `Homepage Banner` by appending it to the list.
+
+      <img src="./docs/images/step-6.png" alt="Step 6" width="400"/>
 
 1. Update `gatsby-node.js`
 
@@ -279,6 +300,8 @@ For this example, we'll create a new "Banner" component.
      }
    `
    ```
+
+---
 
 ## 🎓 Learning Gatsby
 
