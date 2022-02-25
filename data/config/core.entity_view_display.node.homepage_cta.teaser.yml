@@ -1,0 +1,28 @@
+uuid: 76537c65-5267-45f1-ac63-49d1c5433ac7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.homepage_cta.field_image
+    - field.field.node.homepage_cta.field_kicker
+    - field.field.node.homepage_cta.field_links
+    - field.field.node.homepage_cta.field_text
+    - node.type.homepage_cta
+  module:
+    - user
+id: node.homepage_cta.teaser
+targetEntityType: node
+bundle: homepage_cta
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_image: true
+  field_kicker: true
+  field_links: true
+  field_text: true

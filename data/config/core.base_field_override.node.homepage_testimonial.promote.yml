@@ -1,0 +1,21 @@
+uuid: af73056b-f1ac-4fa6-bac8-1f2c660286c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.homepage_testimonial
+id: node.homepage_testimonial.promote
+field_name: promote
+entity_type: node
+bundle: homepage_testimonial
+label: "Promoted to front page"
+description: ""
+required: false
+translatable: true
+default_value:
+  - value: 0
+default_value_callback: ""
+settings:
+  on_label: "On"
+  off_label: "Off"
+field_type: boolean

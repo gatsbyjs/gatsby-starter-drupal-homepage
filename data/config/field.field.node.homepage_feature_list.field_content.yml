@@ -1,0 +1,29 @@
+uuid: fd6b8279-a2d6-4aff-a476-94c1779af4c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.homepage_feature
+    - node.type.homepage_feature_list
+id: node.homepage_feature_list.field_content
+field_name: field_content
+entity_type: node
+bundle: homepage_feature_list
+label: Content
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings:
+  handler: "default:node"
+  handler_settings:
+    target_bundles:
+      homepage_feature: homepage_feature
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ""
+field_type: entity_reference

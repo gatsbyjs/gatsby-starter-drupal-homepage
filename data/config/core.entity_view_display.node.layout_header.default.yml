@@ -1,0 +1,37 @@
+uuid: 3d8eab30-2d0a-4a94-b5af-17a4d7137f80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.layout_header.field_cta
+    - field.field.node.layout_header.field_nav_items
+    - node.type.layout_header
+  module:
+    - user
+id: node.layout_header.default
+targetEntityType: node
+bundle: layout_header
+mode: default
+content:
+  field_cta:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {}
+    weight: 102
+    region: content
+  field_nav_items:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {}
+    weight: 103
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden: {}

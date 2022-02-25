@@ -1,0 +1,29 @@
+uuid: 5d7739a9-0dc4-4e26-9707-10018bd0922f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nav_items
+    - node.type.nav_item
+    - node.type.nav_item_group
+id: node.nav_item_group.field_nav_items
+field_name: field_nav_items
+entity_type: node
+bundle: nav_item_group
+label: "Nav Items"
+description: ""
+required: false
+translatable: false
+default_value: {}
+default_value_callback: ""
+settings:
+  handler: "default:node"
+  handler_settings:
+    target_bundles:
+      nav_item: nav_item
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: nav_item
+field_type: entity_reference

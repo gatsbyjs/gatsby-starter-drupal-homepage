@@ -1,0 +1,48 @@
+uuid: 7aecb3bc-1886-4bc7-a310-2a8f390f1c9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.about_logo_list.field_link
+    - field.field.node.about_logo_list.field_links
+    - field.field.node.about_logo_list.field_logos
+    - node.type.about_logo_list
+  module:
+    - user
+id: node.about_logo_list.default
+targetEntityType: node
+bundle: about_logo_list
+mode: default
+content:
+  field_link:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {}
+    weight: 101
+    region: content
+  field_links:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {}
+    weight: 103
+    region: content
+  field_logos:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {}
+    weight: 102
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden: {}

@@ -1,0 +1,28 @@
+_core:
+  default_config_hash: U05FQzBBZLLZtA9aGnomLlDDkszG50CKmrciFGUlXfM
+server_url: "https://preview-gatsbydrupalhomepage.gtsb.io"
+preview_callback_url: "https://webhook.gatsbyjs.com/hooks/data_source/34e5dccf-8a58-469d-8dae-c9678450fb68"
+path_mapping: ""
+incrementalbuild_url: "https://webhook.gatsbyjs.com/hooks/data_source/publish/34e5dccf-8a58-469d-8dae-c9678450fb68"
+build_published: true
+preview_entity_types:
+  - block_content
+  - comment
+  - contact_message
+  - file
+  - media
+  - menu_link_content
+  - node
+  - path_alias
+  - shortcut
+  - taxonomy_term
+  - user
+contentsync_url: ""
+log_json: false
+publish_private_files: null
+log_published: false
+fastbuilds_preview: false
+delete_log_entities: false
+log_expiration: "604800"
+preview_target: ""
+secret_key: ""

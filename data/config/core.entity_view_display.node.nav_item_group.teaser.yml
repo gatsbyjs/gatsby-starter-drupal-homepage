@@ -1,0 +1,22 @@
+uuid: 922df2af-d85e-4080-9d50-9ca210e18c8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.nav_item_group.field_nav_items
+    - node.type.nav_item_group
+  module:
+    - user
+id: node.nav_item_group.teaser
+targetEntityType: node
+bundle: nav_item_group
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_nav_items: true

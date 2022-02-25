@@ -1,0 +1,19 @@
+uuid: 72bd8388-5f27-4cb0-a9df-060fce2714e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quote
+    - node.type.homepage_testimonial
+id: node.homepage_testimonial.field_quote
+field_name: field_quote
+entity_type: node
+bundle: homepage_testimonial
+label: Quote
+description: ""
+required: true
+translatable: false
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string_long

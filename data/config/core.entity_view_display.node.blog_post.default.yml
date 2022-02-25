@@ -1,0 +1,56 @@
+uuid: 9b983ee9-8eb0-4892-ac08-281c81c797ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.blog_post.field_body
+    - field.field.node.blog_post.field_date
+    - field.field.node.blog_post.field_rich_text
+    - field.field.node.blog_post.field_slug
+    - node.type.blog_post
+  module:
+    - datetime
+    - text
+    - user
+id: node.blog_post.default
+targetEntityType: node
+bundle: blog_post
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: above
+    settings: {}
+    third_party_settings: {}
+    weight: 104
+    region: content
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ""
+      format_type: medium
+    third_party_settings: {}
+    weight: 102
+    region: content
+  field_rich_text:
+    type: text_default
+    label: above
+    settings: {}
+    third_party_settings: {}
+    weight: 103
+    region: content
+  field_slug:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {}
+    weight: 101
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden: {}

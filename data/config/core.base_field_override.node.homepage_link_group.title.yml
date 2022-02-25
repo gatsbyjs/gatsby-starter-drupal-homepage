@@ -1,0 +1,18 @@
+uuid: 57f46273-f8c9-4a54-a7ba-e7b312e2e1ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.homepage_link_group
+id: node.homepage_link_group.title
+field_name: title
+entity_type: node
+bundle: homepage_link_group
+label: Name
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

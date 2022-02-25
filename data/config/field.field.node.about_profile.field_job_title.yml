@@ -1,0 +1,19 @@
+uuid: 161bcf18-be8d-4a96-9fc6-5bab628fd5d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_title
+    - node.type.about_profile
+id: node.about_profile.field_job_title
+field_name: field_job_title
+entity_type: node
+bundle: about_profile
+label: "Job Title"
+description: ""
+required: false
+translatable: false
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

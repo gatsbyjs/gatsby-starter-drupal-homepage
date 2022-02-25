@@ -1,0 +1,21 @@
+uuid: 6a7f6b9f-3235-45fb-913b-004f8a9b8327
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.social_link
+id: node.social_link.promote
+field_name: promote
+entity_type: node
+bundle: social_link
+label: "Promoted to front page"
+description: ""
+required: false
+translatable: true
+default_value:
+  - value: 0
+default_value_callback: ""
+settings:
+  on_label: "On"
+  off_label: "Off"
+field_type: boolean

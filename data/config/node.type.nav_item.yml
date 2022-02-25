@@ -1,0 +1,18 @@
+uuid: ddf45ecb-3808-45b4-97fa-7122e1d0dab0
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: "main:"
+name: "Nav Item"
+type: nav_item
+description: ""
+help: ""
+new_revision: false
+preview_mode: 1
+display_submitted: false

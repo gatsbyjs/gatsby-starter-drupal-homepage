@@ -1,0 +1,18 @@
+uuid: 9cecd40d-ff3f-429a-928a-1a3ea489f753
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.homepage_testimonial_list
+id: node.homepage_testimonial_list.title
+field_name: title
+entity_type: node
+bundle: homepage_testimonial_list
+label: Heading
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

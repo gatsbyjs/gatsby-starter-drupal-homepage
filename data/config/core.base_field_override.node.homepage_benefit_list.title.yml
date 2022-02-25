@@ -1,0 +1,18 @@
+uuid: 00bc0378-3059-41ae-953e-c953cf4352aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.homepage_benefit_list
+id: node.homepage_benefit_list.title
+field_name: title
+entity_type: node
+bundle: homepage_benefit_list
+label: Name
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

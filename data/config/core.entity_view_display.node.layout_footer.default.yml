@@ -1,0 +1,55 @@
+uuid: 01c4124b-84f3-429d-bb7e-bccc6235c47b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.layout_footer.field_copyright
+    - field.field.node.layout_footer.field_links
+    - field.field.node.layout_footer.field_meta
+    - field.field.node.layout_footer.field_social_links
+    - node.type.layout_footer
+  module:
+    - user
+id: node.layout_footer.default
+targetEntityType: node
+bundle: layout_footer
+mode: default
+content:
+  field_copyright:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {}
+    weight: 105
+    region: content
+  field_links:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {}
+    weight: 102
+    region: content
+  field_meta:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {}
+    weight: 104
+    region: content
+  field_social_links:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {}
+    weight: 103
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden: {}

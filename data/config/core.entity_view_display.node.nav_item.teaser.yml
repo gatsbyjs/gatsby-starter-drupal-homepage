@@ -1,0 +1,26 @@
+uuid: bbe09fd3-bc34-416c-bf68-f07c32aeeec7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.nav_item.field_description
+    - field.field.node.nav_item.field_href
+    - field.field.node.nav_item.field_icon
+    - node.type.nav_item
+  module:
+    - user
+id: node.nav_item.teaser
+targetEntityType: node
+bundle: nav_item
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_description: true
+  field_href: true
+  field_icon: true

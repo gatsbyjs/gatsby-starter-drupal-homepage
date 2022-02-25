@@ -1,0 +1,29 @@
+uuid: 3e30b656-5443-430b-931c-e18307e21243
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.about_stat_list.field_content
+    - node.type.about_stat_list
+  module:
+    - user
+id: node.about_stat_list.default
+targetEntityType: node
+bundle: about_stat_list
+mode: default
+content:
+  field_content:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {}
+    weight: 101
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden: {}

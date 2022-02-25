@@ -1,0 +1,8 @@
+uuid: 75c5f55e-e9d7-441f-9ed3-1f4bc918d3eb
+langcode: en
+status: true
+dependencies: {}
+name: EasyMDE
+format: easymde
+weight: 0
+filters: {}

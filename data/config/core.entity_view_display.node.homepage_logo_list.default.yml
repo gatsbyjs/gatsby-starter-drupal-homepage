@@ -1,0 +1,36 @@
+uuid: 662bcdfb-9318-4dad-b5bc-61ac0caf5baf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.homepage_logo_list.field_logos
+    - field.field.node.homepage_logo_list.field_text
+    - node.type.homepage_logo_list
+  module:
+    - user
+id: node.homepage_logo_list.default
+targetEntityType: node
+bundle: homepage_logo_list
+mode: default
+content:
+  field_logos:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {}
+    weight: 102
+    region: content
+  field_text:
+    type: basic_string
+    label: above
+    settings: {}
+    third_party_settings: {}
+    weight: 101
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden: {}

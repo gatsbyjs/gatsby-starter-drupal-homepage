@@ -1,0 +1,19 @@
+uuid: 579e5c34-fa5c-4817-864e-0b5b215ab6fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_kicker
+    - node.type.homepage_cta
+id: node.homepage_cta.field_kicker
+field_name: field_kicker
+entity_type: node
+bundle: homepage_cta
+label: Kicker
+description: ""
+required: false
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

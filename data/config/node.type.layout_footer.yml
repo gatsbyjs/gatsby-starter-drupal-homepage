@@ -1,0 +1,18 @@
+uuid: 5cf1e820-cad3-4150-a7e1-58852b66c6cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: "main:"
+name: "Layout Footer"
+type: layout_footer
+description: ""
+help: ""
+new_revision: false
+preview_mode: 1
+display_submitted: false

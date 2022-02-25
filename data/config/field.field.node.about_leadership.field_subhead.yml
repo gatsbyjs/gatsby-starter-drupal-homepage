@@ -1,0 +1,19 @@
+uuid: 03c1baad-5c6b-4845-8c3f-2cb630a89909
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subhead
+    - node.type.about_leadership
+id: node.about_leadership.field_subhead
+field_name: field_subhead
+entity_type: node
+bundle: about_leadership
+label: Subhead
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

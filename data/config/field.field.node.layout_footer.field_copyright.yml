@@ -1,0 +1,19 @@
+uuid: 5e5eccf0-1e66-4fc8-aa6b-d81ca0f3db49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_copyright
+    - node.type.layout_footer
+id: node.layout_footer.field_copyright
+field_name: field_copyright
+entity_type: node
+bundle: layout_footer
+label: Copyright
+description: ""
+required: true
+translatable: false
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

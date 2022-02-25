@@ -1,0 +1,18 @@
+uuid: 47507009-fbcf-466f-be06-4c3220d7c73c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: "main:"
+name: "Homepage Logo List"
+type: homepage_logo_list
+description: ""
+help: ""
+new_revision: false
+preview_mode: 1
+display_submitted: false

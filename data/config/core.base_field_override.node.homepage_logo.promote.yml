@@ -1,0 +1,21 @@
+uuid: db70fcb3-7101-42f0-aaf3-c29a583be685
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.homepage_logo
+id: node.homepage_logo.promote
+field_name: promote
+entity_type: node
+bundle: homepage_logo
+label: "Promoted to front page"
+description: ""
+required: false
+translatable: true
+default_value:
+  - value: 0
+default_value_callback: ""
+settings:
+  on_label: "On"
+  off_label: "Off"
+field_type: boolean

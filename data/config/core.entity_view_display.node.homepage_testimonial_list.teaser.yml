@@ -1,0 +1,26 @@
+uuid: 2c78eb9d-09a0-47d8-8453-248b3d3f62ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.homepage_testimonial_list.field_content
+    - field.field.node.homepage_testimonial_list.field_kicker
+    - field.field.node.homepage_testimonial_list.field_name
+    - node.type.homepage_testimonial_list
+  module:
+    - user
+id: node.homepage_testimonial_list.teaser
+targetEntityType: node
+bundle: homepage_testimonial_list
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_content: true
+  field_kicker: true
+  field_name: true

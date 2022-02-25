@@ -1,0 +1,18 @@
+uuid: 5ac71ab5-f521-417b-afa2-e33320fd8da1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.homepage_logo
+id: node.homepage_logo.title
+field_name: title
+entity_type: node
+bundle: homepage_logo
+label: Alt
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

@@ -1,0 +1,19 @@
+uuid: ff6fda82-17af-40b9-b219-b64b3b140a34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_href
+    - node.type.homepage_link
+id: node.homepage_link.field_href
+field_name: field_href
+entity_type: node
+bundle: homepage_link
+label: Href
+description: ""
+required: true
+translatable: false
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

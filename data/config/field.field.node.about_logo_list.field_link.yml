@@ -1,0 +1,29 @@
+uuid: d8575d38-4137-4e94-87b9-478ac73adb5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.about_logo_list
+    - node.type.homepage_link
+id: node.about_logo_list.field_link
+field_name: field_link
+entity_type: node
+bundle: about_logo_list
+label: Link
+description: ""
+required: true
+translatable: false
+default_value: {}
+default_value_callback: ""
+settings:
+  handler: "default:node"
+  handler_settings:
+    target_bundles:
+      homepage_link: homepage_link
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ""
+field_type: entity_reference

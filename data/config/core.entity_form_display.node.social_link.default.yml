@@ -1,0 +1,74 @@
+uuid: 59484235-8124-4372-96a8-eeb4ec734f19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.social_link.field_username
+    - node.type.social_link
+  module:
+    - path
+id: node.social_link.default
+targetEntityType: node
+bundle: social_link
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {}
+    third_party_settings: {}
+  field_username:
+    type: string_textfield
+    weight: 121
+    region: content
+    settings:
+      size: 60
+      placeholder: ""
+    third_party_settings: {}
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {}
+    third_party_settings: {}
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {}
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {}
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {}
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ""
+    third_party_settings: {}
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ""
+    third_party_settings: {}
+hidden: {}

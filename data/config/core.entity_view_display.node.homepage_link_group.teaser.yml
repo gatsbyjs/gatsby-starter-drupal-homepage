@@ -1,0 +1,23 @@
+uuid: 99bd776e-0793-47a0-8c98-7cde2982b9f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.homepage_link_group.field_links
+    - node.type.homepage_link_group
+  module:
+    - user
+id: node.homepage_link_group.teaser
+targetEntityType: node
+bundle: homepage_link_group
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_links: true
+  gatsby_iframe_preview: true

@@ -1,0 +1,19 @@
+uuid: d77389da-e877-41f5-8ca7-1782a55654f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_kicker
+    - node.type.homepage_hero
+id: node.homepage_hero.field_kicker
+field_name: field_kicker
+entity_type: node
+bundle: homepage_hero
+label: Kicker
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

@@ -1,0 +1,29 @@
+uuid: ec7d07c1-81ac-4874-9065-0a1721a345e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.homepage_product
+    - node.type.homepage_product_list
+id: node.homepage_product_list.field_content
+field_name: field_content
+entity_type: node
+bundle: homepage_product_list
+label: Content
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings:
+  handler: "default:node"
+  handler_settings:
+    target_bundles:
+      homepage_product: homepage_product
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ""
+field_type: entity_reference

@@ -1,0 +1,28 @@
+uuid: 564c6866-6402-40c7-9627-2d1b3d4ffd65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.social_link.field_username
+    - node.type.social_link
+  module:
+    - user
+id: node.social_link.default
+targetEntityType: node
+bundle: social_link
+mode: default
+content:
+  field_username:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {}
+    weight: 101
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden: {}

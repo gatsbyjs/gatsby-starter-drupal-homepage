@@ -1,0 +1,18 @@
+uuid: 4f654f59-ea37-4663-b419-15689add81f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.about_leadership
+id: node.about_leadership.title
+field_name: title
+entity_type: node
+bundle: about_leadership
+label: Heading
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

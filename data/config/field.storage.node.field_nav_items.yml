@@ -1,0 +1,19 @@
+uuid: 2e5612e5-6a68-4fb8-b9f6-14079f8690c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_nav_items
+field_name: field_nav_items
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {}
+persist_with_no_fields: false
+custom_storage: false

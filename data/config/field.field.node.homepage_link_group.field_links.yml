@@ -1,0 +1,29 @@
+uuid: 5445b27f-baa5-41f0-aaa2-cac6808515c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_links
+    - node.type.homepage_link_group
+    - node.type.nav_item
+id: node.homepage_link_group.field_links
+field_name: field_links
+entity_type: node
+bundle: homepage_link_group
+label: Links
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings:
+  handler: "default:node"
+  handler_settings:
+    target_bundles:
+      nav_item: nav_item
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: homepage_link
+field_type: entity_reference

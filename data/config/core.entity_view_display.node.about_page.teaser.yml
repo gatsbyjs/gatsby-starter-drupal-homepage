@@ -1,0 +1,26 @@
+uuid: 099e1ca5-3d90-4493-a8a6-bfc0de93496b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.about_page.field_content
+    - field.field.node.about_page.field_description
+    - field.field.node.about_page.field_image
+    - node.type.about_page
+  module:
+    - user
+id: node.about_page.teaser
+targetEntityType: node
+bundle: about_page
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_content: true
+  field_description: true
+  field_image: true

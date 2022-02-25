@@ -1,0 +1,19 @@
+uuid: abc97ad8-1713-4a80-ae2a-e563d3d58198
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_username
+    - node.type.social_link
+id: node.social_link.field_username
+field_name: field_username
+entity_type: node
+bundle: social_link
+label: Username
+description: ""
+required: true
+translatable: false
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

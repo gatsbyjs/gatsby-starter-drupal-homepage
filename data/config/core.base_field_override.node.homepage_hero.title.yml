@@ -1,0 +1,18 @@
+uuid: b1b05cfe-c840-4e7b-baee-c7e34b07d2fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.homepage_hero
+id: node.homepage_hero.title
+field_name: title
+entity_type: node
+bundle: homepage_hero
+label: Heading
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

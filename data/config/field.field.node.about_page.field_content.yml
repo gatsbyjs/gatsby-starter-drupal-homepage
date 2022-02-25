@@ -1,0 +1,43 @@
+uuid: bc32ff86-00ea-42d2-9f20-504ed82a1689
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.about_hero
+    - node.type.about_leadership
+    - node.type.about_logo_list
+    - node.type.about_page
+    - node.type.about_stat_list
+    - node.type.homepage_benefit_list
+    - node.type.homepage_cta
+    - node.type.homepage_logo_list
+    - node.type.homepage_product_list
+id: node.about_page.field_content
+field_name: field_content
+entity_type: node
+bundle: about_page
+label: Content
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings:
+  handler: "default:node"
+  handler_settings:
+    target_bundles:
+      about_hero: about_hero
+      about_leadership: about_leadership
+      about_logo_list: about_logo_list
+      about_stat_list: about_stat_list
+      homepage_benefit_list: homepage_benefit_list
+      homepage_cta: homepage_cta
+      homepage_logo_list: homepage_logo_list
+      homepage_product_list: homepage_product_list
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: about_hero
+field_type: entity_reference

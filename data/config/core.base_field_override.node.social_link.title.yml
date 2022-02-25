@@ -1,0 +1,18 @@
+uuid: 36d20ef2-f8cc-4e74-bec1-d3dc3372cdb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.social_link
+id: node.social_link.title
+field_name: title
+entity_type: node
+bundle: social_link
+label: Service
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

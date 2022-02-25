@@ -1,0 +1,29 @@
+uuid: 18cda68a-03cb-4336-91c0-3e5ac92db7cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header
+    - node.type.layout
+    - node.type.layout_header
+id: node.layout.field_header
+field_name: field_header
+entity_type: node
+bundle: layout
+label: Header
+description: ""
+required: true
+translatable: false
+default_value: {}
+default_value_callback: ""
+settings:
+  handler: "default:node"
+  handler_settings:
+    target_bundles:
+      layout_header: layout_header
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ""
+field_type: entity_reference

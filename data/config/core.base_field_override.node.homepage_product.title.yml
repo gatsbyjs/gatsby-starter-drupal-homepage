@@ -1,0 +1,18 @@
+uuid: f5bf15cd-36dd-47bf-ad7d-51cd4d4d122a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.homepage_product
+id: node.homepage_product.title
+field_name: title
+entity_type: node
+bundle: homepage_product
+label: Heading
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

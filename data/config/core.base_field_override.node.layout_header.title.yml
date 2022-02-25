@@ -1,0 +1,18 @@
+uuid: ff6e40bc-46ae-4491-9d4e-9b5d5cc8bb04
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.layout_header
+id: node.layout_header.title
+field_name: title
+entity_type: node
+bundle: layout_header
+label: Name
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

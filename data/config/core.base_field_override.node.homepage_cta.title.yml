@@ -1,0 +1,18 @@
+uuid: 970af2c7-bb3b-46c2-91df-d4192691a8b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.homepage_cta
+id: node.homepage_cta.title
+field_name: title
+entity_type: node
+bundle: homepage_cta
+label: Heading
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

@@ -1,0 +1,19 @@
+uuid: 8d3f4ddf-3585-4d23-83f4-3c94402710d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text
+    - node.type.homepage_logo_list
+id: node.homepage_logo_list.field_text
+field_name: field_text
+entity_type: node
+bundle: homepage_logo_list
+label: Text
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string_long

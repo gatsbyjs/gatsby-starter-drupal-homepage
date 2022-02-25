@@ -1,0 +1,18 @@
+uuid: a40b2ff4-654e-453c-8068-61d1d75610b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: "main:"
+name: "Layout Header"
+type: layout_header
+description: ""
+help: ""
+new_revision: false
+preview_mode: 1
+display_submitted: false

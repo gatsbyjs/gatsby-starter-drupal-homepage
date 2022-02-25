@@ -1,0 +1,46 @@
+uuid: 8f3e316c-b69d-43e6-8478-b8c29a23256b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.homepage_testimonial_list.field_content
+    - field.field.node.homepage_testimonial_list.field_kicker
+    - field.field.node.homepage_testimonial_list.field_name
+    - node.type.homepage_testimonial_list
+  module:
+    - user
+id: node.homepage_testimonial_list.default
+targetEntityType: node
+bundle: homepage_testimonial_list
+mode: default
+content:
+  field_content:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {}
+    weight: 102
+    region: content
+  field_kicker:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {}
+    weight: 101
+    region: content
+  field_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {}
+    weight: 103
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden: {}

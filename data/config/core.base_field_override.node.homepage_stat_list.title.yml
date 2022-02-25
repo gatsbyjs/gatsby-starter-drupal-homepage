@@ -1,0 +1,18 @@
+uuid: db8617e8-441e-443c-8107-3e08afb9087e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.homepage_stat_list
+id: node.homepage_stat_list.title
+field_name: title
+entity_type: node
+bundle: homepage_stat_list
+label: Heading
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

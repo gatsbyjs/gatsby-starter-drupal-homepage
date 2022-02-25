@@ -1,0 +1,25 @@
+uuid: df61e685-3a99-4d00-8700-9a5fbef3bc99
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.homepage_benefit.field_image
+    - field.field.node.homepage_benefit.field_text
+    - node.type.homepage_benefit
+  module:
+    - user
+id: node.homepage_benefit.teaser
+targetEntityType: node
+bundle: homepage_benefit
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_image: true
+  field_text: true
+  gatsby_iframe_preview: true

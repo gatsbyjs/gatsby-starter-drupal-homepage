@@ -1,0 +1,107 @@
+uuid: 6e6667dd-bcd7-44eb-8c51-b60099006024
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.layout_footer.field_copyright
+    - field.field.node.layout_footer.field_links
+    - field.field.node.layout_footer.field_meta
+    - field.field.node.layout_footer.field_social_links
+    - node.type.layout_footer
+  module:
+    - path
+id: node.layout_footer.default
+targetEntityType: node
+bundle: layout_footer
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 6
+    region: content
+    settings: {}
+    third_party_settings: {}
+  field_copyright:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ""
+    third_party_settings: {}
+  field_links:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ""
+    third_party_settings: {}
+  field_meta:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ""
+    third_party_settings: {}
+  field_social_links:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ""
+    third_party_settings: {}
+  path:
+    type: path
+    weight: 9
+    region: content
+    settings: {}
+    third_party_settings: {}
+  promote:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {}
+  status:
+    type: boolean_checkbox
+    weight: 10
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {}
+  sticky:
+    type: boolean_checkbox
+    weight: 8
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {}
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ""
+    third_party_settings: {}
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ""
+    third_party_settings: {}
+hidden: {}

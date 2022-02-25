@@ -1,0 +1,38 @@
+uuid: 92d3b7d2-631b-4a4f-9dc0-921df46bec5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.about_profile.field_image
+    - field.field.node.about_profile.field_job_title
+    - node.type.about_profile
+  module:
+    - user
+id: node.about_profile.default
+targetEntityType: node
+bundle: about_profile
+mode: default
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {}
+    weight: 101
+    region: content
+  field_job_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {}
+    weight: 102
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden: {}

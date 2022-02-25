@@ -1,0 +1,29 @@
+uuid: ee2c7d68-9be4-482b-a72e-bc15b94d5ce1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.about_leadership
+    - node.type.about_profile
+id: node.about_leadership.field_content
+field_name: field_content
+entity_type: node
+bundle: about_leadership
+label: Content
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings:
+  handler: "default:node"
+  handler_settings:
+    target_bundles:
+      about_profile: about_profile
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ""
+field_type: entity_reference

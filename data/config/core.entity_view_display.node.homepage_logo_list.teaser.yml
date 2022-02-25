@@ -1,0 +1,24 @@
+uuid: 8cb7de52-7581-4735-b5c0-274467a0a015
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.homepage_logo_list.field_logos
+    - field.field.node.homepage_logo_list.field_text
+    - node.type.homepage_logo_list
+  module:
+    - user
+id: node.homepage_logo_list.teaser
+targetEntityType: node
+bundle: homepage_logo_list
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_logos: true
+  field_text: true

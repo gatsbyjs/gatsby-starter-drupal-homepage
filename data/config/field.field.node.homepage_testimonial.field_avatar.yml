@@ -1,0 +1,29 @@
+uuid: 18e2c559-8177-47dc-9152-0810c141db15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_avatar
+    - media.type.image
+    - node.type.homepage_testimonial
+id: node.homepage_testimonial.field_avatar
+field_name: field_avatar
+entity_type: node
+bundle: homepage_testimonial
+label: Avatar
+description: ""
+required: true
+translatable: false
+default_value: {}
+default_value_callback: ""
+settings:
+  handler: "default:media"
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ""
+field_type: entity_reference

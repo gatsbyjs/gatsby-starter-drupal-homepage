@@ -1,0 +1,26 @@
+uuid: ae52ee9e-5b82-4a52-8286-29c99841bfac
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.homepage_benefit_list.field_content
+    - field.field.node.homepage_benefit_list.field_heading
+    - field.field.node.homepage_benefit_list.field_text
+    - node.type.homepage_benefit_list
+  module:
+    - user
+id: node.homepage_benefit_list.teaser
+targetEntityType: node
+bundle: homepage_benefit_list
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_content: true
+  field_heading: true
+  field_text: true

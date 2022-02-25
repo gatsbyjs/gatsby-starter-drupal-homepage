@@ -1,0 +1,22 @@
+uuid: baaf148b-9701-4319-b654-72748773d527
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.about_stat_list.field_content
+    - node.type.about_stat_list
+  module:
+    - user
+id: node.about_stat_list.teaser
+targetEntityType: node
+bundle: about_stat_list
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_content: true

@@ -1,0 +1,18 @@
+uuid: 8231c87d-9eea-422b-a54b-4fa313075a65
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.homepage_logo_list
+id: node.homepage_logo_list.title
+field_name: title
+entity_type: node
+bundle: homepage_logo_list
+label: Name
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

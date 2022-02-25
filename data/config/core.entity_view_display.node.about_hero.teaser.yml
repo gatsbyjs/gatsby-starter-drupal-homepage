@@ -1,0 +1,24 @@
+uuid: a056aa22-718a-4d44-9655-dd944f74e1b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.about_hero.field_image
+    - field.field.node.about_hero.field_text
+    - node.type.about_hero
+  module:
+    - user
+id: node.about_hero.teaser
+targetEntityType: node
+bundle: about_hero
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_image: true
+  field_text: true

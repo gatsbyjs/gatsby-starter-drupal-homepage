@@ -1,0 +1,19 @@
+uuid: 8d58471e-ade6-464e-a504-671eade901fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_label
+    - node.type.homepage_stat
+id: node.homepage_stat.field_label
+field_name: field_label
+entity_type: node
+bundle: homepage_stat
+label: Label
+description: ""
+required: true
+translatable: false
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

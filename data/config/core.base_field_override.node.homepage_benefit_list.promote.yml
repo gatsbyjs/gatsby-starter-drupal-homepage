@@ -1,0 +1,21 @@
+uuid: 936aeae2-e599-4da2-a825-8f7ee8bca057
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.homepage_benefit_list
+id: node.homepage_benefit_list.promote
+field_name: promote
+entity_type: node
+bundle: homepage_benefit_list
+label: "Promoted to front page"
+description: ""
+required: false
+translatable: true
+default_value:
+  - value: 0
+default_value_callback: ""
+settings:
+  on_label: "On"
+  off_label: "Off"
+field_type: boolean

@@ -1,0 +1,18 @@
+uuid: 48e3d320-442b-4bfa-9471-76bf84cd1059
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: "main:"
+name: "Homepage Stat"
+type: homepage_stat
+description: ""
+help: ""
+new_revision: false
+preview_mode: 1
+display_submitted: false

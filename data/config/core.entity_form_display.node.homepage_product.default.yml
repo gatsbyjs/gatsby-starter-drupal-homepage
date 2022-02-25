@@ -1,0 +1,94 @@
+uuid: 68b72ca6-5852-4221-b12f-9e220d2244ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.homepage_product.field_image
+    - field.field.node.homepage_product.field_links
+    - field.field.node.homepage_product.field_text
+    - node.type.homepage_product
+  module:
+    - media_library
+    - path
+id: node.homepage_product.default
+targetEntityType: node
+bundle: homepage_product
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 5
+    region: content
+    settings: {}
+    third_party_settings: {}
+  field_image:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {}
+    third_party_settings: {}
+  field_links:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ""
+    third_party_settings: {}
+  field_text:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ""
+    third_party_settings: {}
+  path:
+    type: path
+    weight: 8
+    region: content
+    settings: {}
+    third_party_settings: {}
+  promote:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {}
+  status:
+    type: boolean_checkbox
+    weight: 9
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {}
+  sticky:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {}
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ""
+    third_party_settings: {}
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ""
+    third_party_settings: {}
+hidden: {}

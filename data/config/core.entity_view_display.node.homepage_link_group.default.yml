@@ -1,0 +1,29 @@
+uuid: 58bcf90d-acdc-4f55-952e-14e3b7b703c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.homepage_link_group.field_links
+    - node.type.homepage_link_group
+  module:
+    - user
+id: node.homepage_link_group.default
+targetEntityType: node
+bundle: homepage_link_group
+mode: default
+content:
+  field_links:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {}
+    weight: 101
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  gatsby_iframe_preview: true

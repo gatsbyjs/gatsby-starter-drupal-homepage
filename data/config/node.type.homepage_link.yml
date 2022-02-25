@@ -1,0 +1,18 @@
+uuid: a363cb40-f20f-4964-be21-646de0f0f238
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: "main:"
+name: "Homepage Link"
+type: homepage_link
+description: ""
+help: ""
+new_revision: false
+preview_mode: 1
+display_submitted: false

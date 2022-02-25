@@ -1,0 +1,43 @@
+uuid: b3f9c107-2bd9-4dce-9ded-22f851910615
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.homepage
+    - node.type.homepage_benefit_list
+    - node.type.homepage_cta
+    - node.type.homepage_feature_list
+    - node.type.homepage_hero
+    - node.type.homepage_logo_list
+    - node.type.homepage_product_list
+    - node.type.homepage_stat_list
+    - node.type.homepage_testimonial_list
+id: node.homepage.field_content
+field_name: field_content
+entity_type: node
+bundle: homepage
+label: Content
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings:
+  handler: "default:node"
+  handler_settings:
+    target_bundles:
+      homepage_benefit_list: homepage_benefit_list
+      homepage_cta: homepage_cta
+      homepage_feature_list: homepage_feature_list
+      homepage_hero: homepage_hero
+      homepage_logo_list: homepage_logo_list
+      homepage_product_list: homepage_product_list
+      homepage_stat_list: homepage_stat_list
+      homepage_testimonial_list: homepage_testimonial_list
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: homepage_hero
+field_type: entity_reference

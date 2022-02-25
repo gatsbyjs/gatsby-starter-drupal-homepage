@@ -1,0 +1,24 @@
+uuid: 00830457-a5a4-4cb3-96fc-3e5d42ba5882
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.about_profile.field_image
+    - field.field.node.about_profile.field_job_title
+    - node.type.about_profile
+  module:
+    - user
+id: node.about_profile.teaser
+targetEntityType: node
+bundle: about_profile
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_image: true
+  field_job_title: true

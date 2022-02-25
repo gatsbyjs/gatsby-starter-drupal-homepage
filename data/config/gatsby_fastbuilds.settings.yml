@@ -1,0 +1,5 @@
+_core:
+  default_config_hash: E43wCPTNgvQ3CiibsoITMg2U0i2Wg9JnfSDiNo6yaAs
+log_published: 0
+delete_log_entities: 0
+log_expiration: "604800"

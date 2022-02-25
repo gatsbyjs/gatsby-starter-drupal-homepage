@@ -1,0 +1,46 @@
+uuid: 3d8acccb-be98-4418-b410-ec63480a7c4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.nav_item.field_description
+    - field.field.node.nav_item.field_href
+    - field.field.node.nav_item.field_icon
+    - node.type.nav_item
+  module:
+    - user
+id: node.nav_item.default
+targetEntityType: node
+bundle: nav_item
+mode: default
+content:
+  field_description:
+    type: basic_string
+    label: above
+    settings: {}
+    third_party_settings: {}
+    weight: 3
+    region: content
+  field_href:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {}
+    weight: 1
+    region: content
+  field_icon:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {}
+    weight: 2
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 0
+    region: content
+hidden: {}

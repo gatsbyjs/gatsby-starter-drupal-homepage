@@ -1,0 +1,22 @@
+uuid: 87c23c51-88ae-4f09-83a2-558e88dde33e
+langcode: en
+status: true
+dependencies:
+  module:
+    - gatsby
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: "main:"
+  gatsby:
+    preview: false
+    target: window
+name: "Homepage Benefit"
+type: homepage_benefit
+description: ""
+help: ""
+new_revision: false
+preview_mode: 1
+display_submitted: false

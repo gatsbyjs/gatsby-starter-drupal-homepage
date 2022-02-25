@@ -1,0 +1,21 @@
+uuid: c690b41d-dc01-4283-8889-7fc1eb54a5e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.homepage_logo_list
+id: node.homepage_logo_list.promote
+field_name: promote
+entity_type: node
+bundle: homepage_logo_list
+label: "Promoted to front page"
+description: ""
+required: false
+translatable: true
+default_value:
+  - value: 0
+default_value_callback: ""
+settings:
+  on_label: "On"
+  off_label: "Off"
+field_type: boolean

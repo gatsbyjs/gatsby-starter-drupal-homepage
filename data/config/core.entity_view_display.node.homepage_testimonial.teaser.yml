@@ -1,0 +1,24 @@
+uuid: ec9ae942-c53c-4cc7-96a9-c6a08d25f7e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.homepage_testimonial.field_avatar
+    - field.field.node.homepage_testimonial.field_quote
+    - node.type.homepage_testimonial
+  module:
+    - user
+id: node.homepage_testimonial.teaser
+targetEntityType: node
+bundle: homepage_testimonial
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_avatar: true
+  field_quote: true

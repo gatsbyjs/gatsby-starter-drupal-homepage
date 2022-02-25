@@ -1,0 +1,64 @@
+uuid: 7d39805d-d182-4783-a081-af0b14dcdcb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.homepage_hero.field_image
+    - field.field.node.homepage_hero.field_kicker
+    - field.field.node.homepage_hero.field_links
+    - field.field.node.homepage_hero.field_subhead
+    - field.field.node.homepage_hero.field_text
+    - node.type.homepage_hero
+  module:
+    - user
+id: node.homepage_hero.default
+targetEntityType: node
+bundle: homepage_hero
+mode: default
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {}
+    weight: 103
+    region: content
+  field_kicker:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {}
+    weight: 101
+    region: content
+  field_links:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {}
+    weight: 105
+    region: content
+  field_subhead:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {}
+    weight: 102
+    region: content
+  field_text:
+    type: basic_string
+    label: above
+    settings: {}
+    third_party_settings: {}
+    weight: 104
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden: {}

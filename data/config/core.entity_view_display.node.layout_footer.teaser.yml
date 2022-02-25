@@ -1,0 +1,28 @@
+uuid: 8d4dab53-91fc-4763-ae65-219e5ef94eed
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.layout_footer.field_copyright
+    - field.field.node.layout_footer.field_links
+    - field.field.node.layout_footer.field_meta
+    - field.field.node.layout_footer.field_social_links
+    - node.type.layout_footer
+  module:
+    - user
+id: node.layout_footer.teaser
+targetEntityType: node
+bundle: layout_footer
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_copyright: true
+  field_links: true
+  field_meta: true
+  field_social_links: true

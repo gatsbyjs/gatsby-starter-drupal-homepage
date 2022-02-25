@@ -1,0 +1,22 @@
+uuid: aa055ace-979c-473a-8600-1992d253f7f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.about_stat.field_label
+    - node.type.about_stat
+  module:
+    - user
+id: node.about_stat.teaser
+targetEntityType: node
+bundle: about_stat
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_label: true

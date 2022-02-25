@@ -1,0 +1,18 @@
+uuid: 7f3613b5-6a6d-434b-a769-824d89f1fd6f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: "main:"
+name: "Homepage Logo"
+type: homepage_logo
+description: ""
+help: ""
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,37 @@
+uuid: f74a27ae-9256-4e99-9db7-d0393ceb2f95
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.easymde
+  module:
+    - simplemde
+format: easymde
+editor: simplemde
+settings:
+  spell_checker: 0
+  prompt_urls: 0
+  show_icons:
+    heading: heading
+    heading-smaller: heading-smaller
+    heading-bigger: heading-bigger
+    heading-1: heading-1
+    heading-2: heading-2
+    heading-3: heading-3
+    code: code
+    quote: quote
+    unordered-list: unordered-list
+    ordered-list: ordered-list
+    clean-block: clean-block
+    link: link
+    image: image
+    table: table
+    horizontal-rule: horizontal-rule
+    preview: preview
+    side-by-side: side-by-side
+    fullscreen: fullscreen
+    guide: guide
+  editor:
+    settings:
+      show_icons: null
+image_upload: {}

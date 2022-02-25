@@ -1,0 +1,26 @@
+uuid: 0cc33f43-cb62-49ac-bb26-c9e934cc46d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.about_logo_list.field_link
+    - field.field.node.about_logo_list.field_links
+    - field.field.node.about_logo_list.field_logos
+    - node.type.about_logo_list
+  module:
+    - user
+id: node.about_logo_list.teaser
+targetEntityType: node
+bundle: about_logo_list
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_link: true
+  field_links: true
+  field_logos: true

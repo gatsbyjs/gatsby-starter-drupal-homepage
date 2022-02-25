@@ -1,0 +1,29 @@
+uuid: 8928fee9-bdfc-4a92-9cce-281b095f9080
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_logos
+    - node.type.homepage_logo
+    - node.type.homepage_logo_list
+id: node.homepage_logo_list.field_logos
+field_name: field_logos
+entity_type: node
+bundle: homepage_logo_list
+label: Logos
+description: ""
+required: true
+translatable: false
+default_value: {}
+default_value_callback: ""
+settings:
+  handler: "default:node"
+  handler_settings:
+    target_bundles:
+      homepage_logo: homepage_logo
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ""
+field_type: entity_reference

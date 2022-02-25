@@ -1,0 +1,18 @@
+uuid: 494fa1fb-44a4-4c00-82cd-0eae040ddfdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.about_hero
+id: node.about_hero.title
+field_name: title
+entity_type: node
+bundle: about_hero
+label: Heading
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

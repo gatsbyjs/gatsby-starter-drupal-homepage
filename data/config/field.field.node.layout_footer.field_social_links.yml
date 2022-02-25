@@ -1,0 +1,29 @@
+uuid: 89be5a7f-cc92-41b8-b6f4-5dc567ae52e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_links
+    - node.type.layout_footer
+    - node.type.social_link
+id: node.layout_footer.field_social_links
+field_name: field_social_links
+entity_type: node
+bundle: layout_footer
+label: "Social Links"
+description: ""
+required: true
+translatable: false
+default_value: {}
+default_value_callback: ""
+settings:
+  handler: "default:node"
+  handler_settings:
+    target_bundles:
+      social_link: social_link
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ""
+field_type: entity_reference

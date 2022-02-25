@@ -1,0 +1,29 @@
+uuid: 0ad19d60-9948-4aae-99b8-2d6670284fb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.homepage_testimonial
+    - node.type.homepage_testimonial_list
+id: node.homepage_testimonial_list.field_content
+field_name: field_content
+entity_type: node
+bundle: homepage_testimonial_list
+label: Content
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings:
+  handler: "default:node"
+  handler_settings:
+    target_bundles:
+      homepage_testimonial: homepage_testimonial
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ""
+field_type: entity_reference

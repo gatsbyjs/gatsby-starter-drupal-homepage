@@ -1,0 +1,18 @@
+uuid: 8eb37a58-8a46-4944-a051-a75a5a9f6412
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.homepage_link
+id: node.homepage_link.title
+field_name: title
+entity_type: node
+bundle: homepage_link
+label: Text
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

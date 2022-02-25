@@ -1,0 +1,47 @@
+uuid: 8035f68f-493c-4020-b527-40876b9331b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.about_leadership.field_content
+    - field.field.node.about_leadership.field_kicker
+    - field.field.node.about_leadership.field_subhead
+    - node.type.about_leadership
+  module:
+    - user
+id: node.about_leadership.default
+targetEntityType: node
+bundle: about_leadership
+mode: default
+content:
+  field_content:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {}
+    weight: 103
+    region: content
+  field_kicker:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {}
+    weight: 101
+    region: content
+  field_subhead:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {}
+    weight: 102
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden: {}

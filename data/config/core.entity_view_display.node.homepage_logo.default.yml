@@ -1,0 +1,29 @@
+uuid: fff9b299-e9cf-4fbb-8b90-f2309d379418
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.homepage_logo.field_image
+    - node.type.homepage_logo
+  module:
+    - user
+id: node.homepage_logo.default
+targetEntityType: node
+bundle: homepage_logo
+mode: default
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {}
+    weight: 101
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden: {}

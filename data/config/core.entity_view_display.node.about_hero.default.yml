@@ -1,0 +1,37 @@
+uuid: 6902f432-9433-4c5a-99dc-a3092297f6c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.about_hero.field_image
+    - field.field.node.about_hero.field_text
+    - node.type.about_hero
+  module:
+    - user
+id: node.about_hero.default
+targetEntityType: node
+bundle: about_hero
+mode: default
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {}
+    weight: 102
+    region: content
+  field_text:
+    type: basic_string
+    label: above
+    settings: {}
+    third_party_settings: {}
+    weight: 101
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden: {}

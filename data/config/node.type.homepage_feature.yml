@@ -1,0 +1,18 @@
+uuid: 22166dae-802b-45a3-a2fa-da29d392a21e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: "main:"
+name: "Homepage Feature"
+type: homepage_feature
+description: ""
+help: ""
+new_revision: false
+preview_mode: 1
+display_submitted: false

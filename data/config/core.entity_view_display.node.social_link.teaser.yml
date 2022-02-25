@@ -1,0 +1,22 @@
+uuid: d55e59c9-6f3d-4115-9f35-4f99fe08136a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.social_link.field_username
+    - node.type.social_link
+  module:
+    - user
+id: node.social_link.teaser
+targetEntityType: node
+bundle: social_link
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_username: true

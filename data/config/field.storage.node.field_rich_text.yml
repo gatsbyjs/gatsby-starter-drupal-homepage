@@ -1,0 +1,19 @@
+uuid: fb815420-59a4-4021-a306-7670098ae3ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_rich_text
+field_name: field_rich_text
+entity_type: node
+type: text_long
+settings: {}
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {}
+persist_with_no_fields: false
+custom_storage: false

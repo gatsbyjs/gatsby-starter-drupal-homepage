@@ -1,0 +1,55 @@
+uuid: dbc9392f-23bc-4a96-81f5-558bacebc157
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.homepage_feature.field_image
+    - field.field.node.homepage_feature.field_kicker
+    - field.field.node.homepage_feature.field_links
+    - field.field.node.homepage_feature.field_text
+    - node.type.homepage_feature
+  module:
+    - user
+id: node.homepage_feature.default
+targetEntityType: node
+bundle: homepage_feature
+mode: default
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {}
+    weight: 0
+    region: content
+  field_kicker:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {}
+    weight: 2
+    region: content
+  field_links:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {}
+    weight: 4
+    region: content
+  field_text:
+    type: basic_string
+    label: above
+    settings: {}
+    third_party_settings: {}
+    weight: 3
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 1
+    region: content
+hidden: {}

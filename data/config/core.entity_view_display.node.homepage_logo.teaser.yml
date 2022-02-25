@@ -1,0 +1,22 @@
+uuid: 1e330599-5141-4f2a-aea5-030d7d2a2751
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.homepage_logo.field_image
+    - node.type.homepage_logo
+  module:
+    - user
+id: node.homepage_logo.teaser
+targetEntityType: node
+bundle: homepage_logo
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_image: true

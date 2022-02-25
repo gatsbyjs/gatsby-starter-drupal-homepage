@@ -1,0 +1,38 @@
+uuid: 934030f6-a207-4162-a392-fc5b4b7c1d16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.homepage_benefit.field_image
+    - field.field.node.homepage_benefit.field_text
+    - node.type.homepage_benefit
+  module:
+    - user
+id: node.homepage_benefit.default
+targetEntityType: node
+bundle: homepage_benefit
+mode: default
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {}
+    weight: 101
+    region: content
+  field_text:
+    type: basic_string
+    label: above
+    settings: {}
+    third_party_settings: {}
+    weight: 102
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  gatsby_iframe_preview: true

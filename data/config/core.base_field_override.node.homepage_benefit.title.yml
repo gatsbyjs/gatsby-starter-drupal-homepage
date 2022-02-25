@@ -1,0 +1,18 @@
+uuid: fdbe6570-c085-4eab-aba8-476804b387fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.homepage_benefit
+id: node.homepage_benefit.title
+field_name: title
+entity_type: node
+bundle: homepage_benefit
+label: Heading
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

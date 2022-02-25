@@ -1,0 +1,28 @@
+uuid: 59fda9f3-b047-43a6-8168-52fe2fb83c83
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.blog_post.field_body
+    - field.field.node.blog_post.field_date
+    - field.field.node.blog_post.field_rich_text
+    - field.field.node.blog_post.field_slug
+    - node.type.blog_post
+  module:
+    - user
+id: node.blog_post.teaser
+targetEntityType: node
+bundle: blog_post
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_body: true
+  field_date: true
+  field_rich_text: true
+  field_slug: true

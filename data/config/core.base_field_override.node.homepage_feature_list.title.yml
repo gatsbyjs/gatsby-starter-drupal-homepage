@@ -1,0 +1,18 @@
+uuid: e8f49478-5b14-4bac-a954-6cabc3721927
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.homepage_feature_list
+id: node.homepage_feature_list.title
+field_name: title
+entity_type: node
+bundle: homepage_feature_list
+label: Heading
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

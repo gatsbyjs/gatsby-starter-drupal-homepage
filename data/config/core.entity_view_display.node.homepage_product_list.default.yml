@@ -1,0 +1,37 @@
+uuid: b7f51d3e-c40d-49de-a75b-186ca5a24fb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.homepage_product_list.field_content
+    - field.field.node.homepage_product_list.field_kicker
+    - node.type.homepage_product_list
+  module:
+    - user
+id: node.homepage_product_list.default
+targetEntityType: node
+bundle: homepage_product_list
+mode: default
+content:
+  field_content:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {}
+    weight: 102
+    region: content
+  field_kicker:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {}
+    weight: 101
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden: {}

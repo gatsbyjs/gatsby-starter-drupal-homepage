@@ -1,0 +1,20 @@
+uuid: d1b5165e-8262-4d34-9892-b663b067911d
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_avatar
+field_name: field_avatar
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {}
+persist_with_no_fields: false
+custom_storage: false

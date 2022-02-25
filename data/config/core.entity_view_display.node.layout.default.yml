@@ -1,0 +1,37 @@
+uuid: b34bd2a2-f99d-48f3-8e25-8990a1aa9eeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.layout.field_footer
+    - field.field.node.layout.field_header
+    - node.type.layout
+  module:
+    - user
+id: node.layout.default
+targetEntityType: node
+bundle: layout
+mode: default
+content:
+  field_footer:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {}
+    weight: 102
+    region: content
+  field_header:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {}
+    weight: 101
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden: {}

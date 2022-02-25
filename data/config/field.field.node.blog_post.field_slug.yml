@@ -1,0 +1,19 @@
+uuid: c5da0619-dbec-4498-a544-9b099073926e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slug
+    - node.type.blog_post
+id: node.blog_post.field_slug
+field_name: field_slug
+entity_type: node
+bundle: blog_post
+label: Slug
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

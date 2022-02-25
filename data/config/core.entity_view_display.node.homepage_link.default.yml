@@ -1,0 +1,29 @@
+uuid: 0347ca86-1ba7-49fc-a3c3-52ba3fdcdc6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.homepage_link.field_href
+    - node.type.homepage_link
+  module:
+    - user
+id: node.homepage_link.default
+targetEntityType: node
+bundle: homepage_link
+mode: default
+content:
+  field_href:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {}
+    weight: 102
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  gatsby_iframe_preview: true

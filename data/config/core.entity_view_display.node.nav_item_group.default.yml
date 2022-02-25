@@ -1,0 +1,28 @@
+uuid: f9b2a7fa-ad14-4b38-8f01-87474ed35a62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.nav_item_group.field_nav_items
+    - node.type.nav_item_group
+  module:
+    - user
+id: node.nav_item_group.default
+targetEntityType: node
+bundle: nav_item_group
+mode: default
+content:
+  field_nav_items:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {}
+    weight: 102
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden: {}

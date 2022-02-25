@@ -1,0 +1,19 @@
+uuid: bfdd7583-d85d-454b-8ba0-ff67601eb9fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_kicker
+    - node.type.homepage_product_list
+id: node.homepage_product_list.field_kicker
+field_name: field_kicker
+entity_type: node
+bundle: homepage_product_list
+label: Kicker
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

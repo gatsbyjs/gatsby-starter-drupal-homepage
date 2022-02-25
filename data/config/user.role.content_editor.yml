@@ -1,0 +1,41 @@
+uuid: 99a999d4-3c01-44e9-82e9-ca8cfa2bafab
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.easymde
+    - taxonomy.vocabulary.tags
+  module:
+    - comment
+    - contextual
+    - file
+    - filter
+    - node
+    - path
+    - system
+    - taxonomy
+    - toolbar
+    - tour
+_core:
+  default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
+id: content_editor
+label: "Content editor"
+weight: 2
+is_admin: false
+permissions:
+  - "access administration pages"
+  - "access content overview"
+  - "access contextual links"
+  - "access files overview"
+  - "access toolbar"
+  - "access tour"
+  - "administer url aliases"
+  - "create terms in tags"
+  - "create url aliases"
+  - "edit own comments"
+  - "edit terms in tags"
+  - "revert all revisions"
+  - "use text format easymde"
+  - "view all revisions"
+  - "view own unpublished content"
+  - "view the administration theme"

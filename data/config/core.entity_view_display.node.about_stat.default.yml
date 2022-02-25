@@ -1,0 +1,28 @@
+uuid: 745215a1-1cb0-4dd4-aa36-4fbb7ec9c315
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.about_stat.field_label
+    - node.type.about_stat
+  module:
+    - user
+id: node.about_stat.default
+targetEntityType: node
+bundle: about_stat
+mode: default
+content:
+  field_label:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {}
+    weight: 101
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden: {}

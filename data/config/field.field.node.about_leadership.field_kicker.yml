@@ -1,0 +1,19 @@
+uuid: 38dc46c7-3667-4af2-8602-5378556e02be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_kicker
+    - node.type.about_leadership
+id: node.about_leadership.field_kicker
+field_name: field_kicker
+entity_type: node
+bundle: about_leadership
+label: Kicker
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string

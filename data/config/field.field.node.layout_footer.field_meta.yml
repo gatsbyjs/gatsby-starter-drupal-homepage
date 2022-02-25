@@ -1,0 +1,29 @@
+uuid: d097d165-4c91-40bb-8652-ebe7a00170f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta
+    - node.type.homepage_link
+    - node.type.layout_footer
+id: node.layout_footer.field_meta
+field_name: field_meta
+entity_type: node
+bundle: layout_footer
+label: Meta
+description: ""
+required: true
+translatable: false
+default_value: {}
+default_value_callback: ""
+settings:
+  handler: "default:node"
+  handler_settings:
+    target_bundles:
+      homepage_link: homepage_link
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ""
+field_type: entity_reference

@@ -1,0 +1,46 @@
+uuid: 5a975b0b-69f5-4d41-9148-66083ad2cb76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.homepage.field_content
+    - field.field.node.homepage.field_description
+    - field.field.node.homepage.field_image
+    - node.type.homepage
+  module:
+    - user
+id: node.homepage.default
+targetEntityType: node
+bundle: homepage
+mode: default
+content:
+  field_content:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {}
+    weight: 103
+    region: content
+  field_description:
+    type: basic_string
+    label: above
+    settings: {}
+    third_party_settings: {}
+    weight: 101
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {}
+    weight: 102
+    region: content
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden: {}

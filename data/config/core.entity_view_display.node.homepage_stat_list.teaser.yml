@@ -1,0 +1,34 @@
+uuid: f7846cdf-b348-4fea-9aec-c2c61a1f5014
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.homepage_stat_list.field_content
+    - field.field.node.homepage_stat_list.field_icon
+    - field.field.node.homepage_stat_list.field_image
+    - field.field.node.homepage_stat_list.field_kicker
+    - field.field.node.homepage_stat_list.field_links
+    - field.field.node.homepage_stat_list.field_name
+    - field.field.node.homepage_stat_list.field_text
+    - node.type.homepage_stat_list
+  module:
+    - user
+id: node.homepage_stat_list.teaser
+targetEntityType: node
+bundle: homepage_stat_list
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_content: true
+  field_icon: true
+  field_image: true
+  field_kicker: true
+  field_links: true
+  field_name: true
+  field_text: true

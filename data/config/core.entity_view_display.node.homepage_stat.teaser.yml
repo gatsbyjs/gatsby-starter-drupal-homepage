@@ -1,0 +1,24 @@
+uuid: 335462d1-45b7-4755-ac4e-2c4ab420ffe3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.homepage_stat.field_heading
+    - field.field.node.homepage_stat.field_label
+    - node.type.homepage_stat
+  module:
+    - user
+id: node.homepage_stat.teaser
+targetEntityType: node
+bundle: homepage_stat
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_heading: true
+  field_label: true

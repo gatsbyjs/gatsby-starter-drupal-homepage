@@ -1,0 +1,29 @@
+uuid: 25589e2f-c502-4d12-82ba-9d132a15b4b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icon
+    - media.type.image
+    - node.type.nav_item
+id: node.nav_item.field_icon
+field_name: field_icon
+entity_type: node
+bundle: nav_item
+label: Icon
+description: ""
+required: false
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings:
+  handler: "default:media"
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ""
+field_type: entity_reference

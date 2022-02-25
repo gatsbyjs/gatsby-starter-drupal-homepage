@@ -1,0 +1,26 @@
+uuid: fa0196dd-66a3-42ae-82fb-d883662de334
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.about_leadership.field_content
+    - field.field.node.about_leadership.field_kicker
+    - field.field.node.about_leadership.field_subhead
+    - node.type.about_leadership
+  module:
+    - user
+id: node.about_leadership.teaser
+targetEntityType: node
+bundle: about_leadership
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_content: true
+  field_kicker: true
+  field_subhead: true

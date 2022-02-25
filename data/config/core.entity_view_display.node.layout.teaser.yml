@@ -1,0 +1,24 @@
+uuid: cdd7b734-24f7-438f-b848-5da46fff571d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.layout.field_footer
+    - field.field.node.layout.field_header
+    - node.type.layout
+  module:
+    - user
+id: node.layout.teaser
+targetEntityType: node
+bundle: layout
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_footer: true
+  field_header: true

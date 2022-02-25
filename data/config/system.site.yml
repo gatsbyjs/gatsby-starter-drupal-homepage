@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: d74e0c35-da98-4767-bcc9-f21c501649a8
+name: "Home Page Starter"
+mail: developer-experience-squad@gatsbyjs.com
+slogan: ""
+page:
+  403: ""
+  404: ""
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

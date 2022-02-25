@@ -1,0 +1,22 @@
+uuid: b136e82c-b9a6-412e-bc18-0c30c6971070
+langcode: en
+status: true
+dependencies:
+  module:
+    - gatsby
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: "main:"
+  gatsby:
+    preview: false
+    target: window
+name: "Homepage Link Group"
+type: homepage_link_group
+description: ""
+help: ""
+new_revision: false
+preview_mode: 1
+display_submitted: false

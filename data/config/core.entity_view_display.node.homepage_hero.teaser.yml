@@ -1,0 +1,30 @@
+uuid: d30a9343-3613-4eba-b09d-97ffd2dd4c8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.homepage_hero.field_image
+    - field.field.node.homepage_hero.field_kicker
+    - field.field.node.homepage_hero.field_links
+    - field.field.node.homepage_hero.field_subhead
+    - field.field.node.homepage_hero.field_text
+    - node.type.homepage_hero
+  module:
+    - user
+id: node.homepage_hero.teaser
+targetEntityType: node
+bundle: homepage_hero
+mode: teaser
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_image: true
+  field_kicker: true
+  field_links: true
+  field_subhead: true
+  field_text: true

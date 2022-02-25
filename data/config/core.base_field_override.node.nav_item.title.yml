@@ -1,0 +1,18 @@
+uuid: 1708d441-3dee-43a3-a0b3-db55f440789c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.nav_item
+id: node.nav_item.title
+field_name: title
+entity_type: node
+bundle: nav_item
+label: Text
+description: ""
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings: {}
+field_type: string
