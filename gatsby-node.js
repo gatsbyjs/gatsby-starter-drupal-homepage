@@ -375,7 +375,7 @@ exports.createSchemaCustomization = async ({ actions }) => {
     type node__nav_item_group implements Node & NavItemGroup & HeaderNavItem
       @dontInfer {
       id: ID!
-      navItemType: String @navItemType(name: "Dropdown")
+      navItemType: String @navItemType(name: "Group")
       name: String @proxy(from: "title")
       navItems: [NavItem]
         @link(by: "id", from: "relationships.field_nav_items___NODE")
