@@ -1,6 +1,14 @@
 {
   "name": "gatsby-starter-drupal-homepage",
   "version": "1.0.0",
+  "scripts": {
+    "start": "gatsby develop",
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "setup": "node ./scripts/setup.js"
+  },
   "dependencies": {
     "gatsby-plugin-react-helmet": "^5.5.0",
     "gatsby-source-drupal": "^5.6.0",
@@ -26,12 +34,10 @@
     "react-feather": "^2.0.9",
     "sharp": "^0.29.3"
   },
-  "private": true,
-  "scripts": {
-    "start": "gatsby develop",
-    "develop": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  }
+  "devDependencies": {
+    "chalk": "^4.1.0",
+    "inquirer": "^8.2.0",
+    "yargs": "^17.3.1"
+  },
+  "private": true
 }
