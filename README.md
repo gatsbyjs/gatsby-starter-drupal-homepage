@@ -54,7 +54,9 @@ You will need a new or existing `Drupal` website to use this starter and will be
 
    1. The credentials for logging in are:
       `sh username: admin password: DrupalGatsby123`
-      Our site is up but we still need to install the [Gatsby Module](https://www.drupal.org/project/gatsby). To do that on **Pantheon** we need to pull down the site locally and install the module using **composer**. To streamline this process we will use a free, open source, cross-platform tool called [Lando](https://lando.dev/) which you can [Download Here](https://github.com/lando/lando/releases/tag/v3.6.0) (At the time v3.6.0 was the latest stable version).
+      It is highly recommended that you change the password to your Drupal site afterwards to something that only you know.
+
+      Now, our site is up but we still need to install the [Gatsby Module](https://www.drupal.org/project/gatsby). To do that on **Pantheon** we need to pull down the site locally and install the module using **composer**. To streamline this process we will use a free, open source, cross-platform tool called [Lando](https://lando.dev/) which you can [Download Here](https://github.com/lando/lando/releases/tag/v3.6.0) (At the time v3.6.0 was the latest stable version).
 
 ### Lando & Pantheon Integration
 
@@ -120,7 +122,17 @@ All the modules should know be installed and activated. To ensure that they are 
 
 1. Head to the bottom on the page and click the ****Install**** button.
 
-1. You're done!
+1. Now you're done in your Drupal site! But we have one more step remaining to connect to your Gatsby homepage site.
+
+1. **Run the setup script**
+
+After setting up the Drupal site, navigate back to your Gatsby site's root directory and run:
+
+```sh
+yarn setup
+```
+
+This will run a script to create `.env.development` and `.env.production` files for you populated with your Drupal site environment variables.
 
 ---
 
