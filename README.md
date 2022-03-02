@@ -104,7 +104,7 @@ For a video guided step-by-step tutorial see the links below:
    lando push
    ```
 
-All the modules should know be installed and activated. To ensure that they are all installed correctly:
+All the modules should now be installed and activated. To ensure that they are all installed correctly:
 
 1. Go to your local **Drupal** site and login.
 
