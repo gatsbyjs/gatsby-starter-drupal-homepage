@@ -8,6 +8,9 @@ Create a homepage using Gatsby and Drupal. This starter demonstrates how to use 
 
 [View the Demo](https://gatsbydrupalhomepage.gatsbyjs.io/)
 
+**Note:**
+This version of the Drupal homepage starter is written in JavaScript. If you want to use Drupal but TypeScript is more your style, there is also a TypeScript version maintained on [GitHub](https://github.com/gatsbyjs/gatsby-starter-drupal-homepage-ts).
+
 ## Quick start
 
 You will need a new or existing `Drupal` website to use this starter and will be asked for your `baseUrl` and the `username` and `password` for your `Drupal` during installation.
@@ -16,7 +19,7 @@ You will need a new or existing `Drupal` website to use this starter and will be
 
    Use the Gatsby CLI to get started locally:
 
-   ```sh name
+   ```sh repo
    npx gatsby new my-homepage https://github.com/gatsbyjs/gatsby-starter-drupal-homepage
    ```
 
@@ -353,7 +356,7 @@ For this example, we'll create a new "Banner" component.
 
 1. Next, create the Banner component:
 
-   ```jsx
+   ```jsx fileExt
    // src/components/banner.js
    import * as React from "react"
    import { graphql } from "gatsby"
@@ -381,7 +384,7 @@ For this example, we'll create a new "Banner" component.
 
 1. Export the component from `src/components/sections.js`
 
-   ```js
+   ```js fileExt
    // src/components/sections.js
    export { default as HomepageHero } from "./hero"
    export { default as HomepageFeature } from "./feature"
@@ -399,7 +402,7 @@ For this example, we'll create a new "Banner" component.
 
 1. Add the GraphQL query fragment to the query in `src/pages/index.js`
 
-   ```js
+   ```js fileExt
    // in src/pages/index.js
    export const query = graphql`
      {
