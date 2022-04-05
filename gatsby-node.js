@@ -1,3 +1,5 @@
+const { getGatsbyImageResolver } = require("gatsby-plugin-image/graphql-utils")
+
 const formatAsNodeType = (str) => {
   const base = str.replace("node__", "")
   const type = base
@@ -19,6 +21,16 @@ exports.createSchemaCustomization = async ({ actions }) => {
         resolve(source) {
           return formatAsNodeType(source.internal.type)[0]
         },
+      }
+    },
+  })
+
+  actions.createFieldExtension({
+    name: "imagePassthroughArgs",
+    extend(options) {
+      const { args } = getGatsbyImageResolver()
+      return {
+        args,
       }
     },
   })
@@ -122,7 +134,7 @@ exports.createSchemaCustomization = async ({ actions }) => {
     interface HomepageImage implements Node {
       id: ID!
       alt: String
-      gatsbyImageData: JSON
+      gatsbyImageData: JSON @imagePassthroughArgs
       url: String
     }
 
@@ -384,7 +396,7 @@ exports.createSchemaCustomization = async ({ actions }) => {
     type media__image implements Node & HomepageImage {
       id: ID!
       alt: String @proxy(from: "field_media_image.alt")
-      gatsbyImageData: JSON @imagePassthroughResolver
+      gatsbyImageData: JSON @imagePassthroughResolver @imagePassthroughArgs
       url: String @imageUrl
       title: String
     }
