@@ -51,7 +51,7 @@ You will need a new or existing `Drupal` website to use this starter and will be
 
       <img src="./docs/images/setup-step-5.png" width="500">
 
-   1. **_Clear Caches_** and and test out your site by clicking either **_Visit Development Site_** or **_Site Admin_**.
+   1. **_Clear Caches_** and test out your site by clicking either **_Visit Development Site_** or **_Site Admin_**.
 
       <img src="./docs/images/setup-step-6.png" width="500">
 
