@@ -76,7 +76,7 @@ For a video guided step-by-step tutorial see the links below:
    mkdir homepage-starter
    cd homepage-starter
 
-   # Initialize Lando and when prompted select Pantheon and paste in the Machine Key generated earlier. Continue following the prompts provided to pull donw your site.
+   # Initialize Lando and when prompted select Pantheon and paste in the Machine Key generated earlier. Continue following the prompts provided to pull down your site.
    lando init
 
    # Start server
@@ -309,7 +309,7 @@ For this example, we'll create a new "Banner" component.
 
       <img src="./docs/images/step-1.png" alt="Step 1" width="300" />
 
-   1. For this example, change the _Title_ field's name to _Heading_ in when creating your new content type. Remove any fields that are added dy default and create a new field called `text` this should be of `Text (plain, long)` data type or use an existing field with the same type and field name.
+   1. For this example, change the _Title_ field's name to _Heading_ in when creating your new content type. Remove any fields that are added by default and create a new field called `text` this should be of `Text (plain, long)` data type or use an existing field with the same type and field name.
 
       <img src="./docs/images/step-2.png" alt="Step 2" width="400" />
 
